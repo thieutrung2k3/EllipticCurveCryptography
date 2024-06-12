@@ -42,10 +42,10 @@ namespace ECC
                 case 'ũ': return 270;
                 case 'ữ': return 271;
                 case 'ĩ': return 272;
-                case 'õ': return 273;
+                //case 'õ': return 273;
                 case 'ỗ': return 274;
                 case 'ỡ': return 275;
-                case 'ã': return 276;
+                //case 'ã': return 276;
                 case 'ẫ': return 277;
                 case 'ẵ': return 278;
                 case 'ỹ': return 279;
@@ -62,6 +62,21 @@ namespace ECC
                 case 'ẩ': return 289;
                 case 'ẳ': return 290;
                 case 'ỷ': return 291;
+
+                case 'ế': return 292;
+                case 'ứ': return 293;
+                case 'ố': return 294;
+                case 'ớ': return 295;
+                case 'ấ': return 296;
+                case 'ắ': return 297;
+
+                case 'ề': return 298;
+                case 'ừ': return 299;
+                case 'ồ': return 300;
+                case 'ờ': return 301;
+                case 'ầ': return 302;
+                case 'ằ': return 303;
+
                 default: return (int) s;
             }
         }
@@ -87,10 +102,10 @@ namespace ECC
                 case 270: return 'ũ';
                 case 271: return 'ữ';
                 case 272: return 'ĩ';
-                case 273: return 'õ';
+                //case 273: return 'õ';
                 case 274: return 'ỗ';
                 case 275: return 'ỡ';
-                case 276: return 'ã';
+                //case 276: return 'ã';
                 case 277: return 'ẫ';
                 case 278: return 'ẵ';
                 case 279: return 'ỹ';
@@ -107,6 +122,21 @@ namespace ECC
                 case 289: return 'ẩ';
                 case 290: return 'ẳ';
                 case 291: return 'ỷ';
+
+                case 292: return 'ế';
+                case 293: return 'ứ';
+                case 294: return 'ố';
+                case 295: return 'ớ';
+                case 296: return 'ấ';
+                case 297: return 'ắ';
+
+                case 298: return 'ề';
+                case 299: return 'ừ';
+                case 300: return 'ồ';
+                case 301: return 'ờ';
+                case 302: return 'ầ';
+                case 303: return 'ằ';
+
                 default: return (char)i;
             }
         }

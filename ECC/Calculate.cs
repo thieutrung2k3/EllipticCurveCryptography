@@ -64,21 +64,27 @@ namespace ECC
             }
             return t[i] % a_last;
         }
+
         #endregion
         #region Find Infinity Point
         public static Point CalculatePoint(Point g, Point p, int a, int z)
         {
+            if (g.X == 0 && g.Y == 0) return p;
+            if (p.X == 0 && p.Y == 0) return g;
+
             int s;
             if (g.X == p.X && g.Y == p.Y)
             {
+                if (g.Y == 0) return new Point(0, 0);
                 s = (((3 * g.X * g.X + a) % z) * FindTheInverseElement(2 * g.Y, z)) % z;
             }
             else
             {
+                if (g.X == p.X) return new Point(0, 0);
                 s = ((g.Y - p.Y) * FindTheInverseElement(g.X - p.X, z)) % z;
             }
-            int x_new = ((s * s) - g.X - p.X) % z;
-            int y_new = (s * (p.X - x_new) - p.Y) % z;
+            int x_new = (s * s - g.X - p.X) % z;
+            int y_new = (s * (g.X - x_new) - g.Y) % z;
             return new Point((x_new + z) % z, (y_new + z) % z);
         }
 
@@ -95,7 +101,7 @@ namespace ECC
         }
         #endregion
         public static Point MultiplyByNumber(Point p, int k, int a, int z)
-        {
+        { 
             Point p2 = p;
             int count = 1;
             while (count < k)

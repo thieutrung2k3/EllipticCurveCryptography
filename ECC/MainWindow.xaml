@@ -15,7 +15,7 @@
                 <Button x:Name="btnDecrypt" Content="Giải mã" HorizontalAlignment="Left" Margin="160,182,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="btnDecrypt_Click"/>
                 <TextBox x:Name="txtCipherText2" HorizontalAlignment="Left" Margin="160,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="75"/>
                 <TextBox x:Name="txtPlainText2" HorizontalAlignment="Left" Margin="160,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="75"/>
-                <Button x:Name="btnSave2" Content="Lưu" HorizontalAlignment="Left" Margin="160,350,0,0" VerticalAlignment="Top" Height="30" Width="90"/>
+                <Button x:Name="btnSave2" Content="Lưu" HorizontalAlignment="Left" Margin="160,350,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="btnSave2_Click"/>
                 <Button x:Name="btnFile2" Content="File" HorizontalAlignment="Left" Margin="381,78,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="btnFile2_Click"/>
             </Grid>
         </GroupBox>
@@ -27,7 +27,7 @@
                 <Button x:Name="btnEncrypt" Content="Mã hóa" HorizontalAlignment="Left" Margin="98,187,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="Button_Click"/>
                 <TextBox x:Name="txtPlainText1" HorizontalAlignment="Left" Margin="98,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="75"/>
                 <TextBox x:Name="txtCipherText1" HorizontalAlignment="Left" Margin="98,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Height="75"/>
-                <Button x:Name="btnSave" Content="Lưu" HorizontalAlignment="Left" Margin="98,355,0,0" VerticalAlignment="Top" Height="30" Width="90"/>
+                <Button x:Name="btnSave" Content="Lưu" HorizontalAlignment="Left" Margin="98,355,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="btnSave_Click"/>
                 <Button x:Name="btnMove" Content="Chuyển" HorizontalAlignment="Left" Margin="211,355,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="btnMove_Click"/>
                 <Button x:Name="btnFile" Content="File" HorizontalAlignment="Left" Margin="319,83,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="btnFile_Click"/>
             </Grid>

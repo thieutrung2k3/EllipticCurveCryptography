@@ -49,7 +49,15 @@ namespace ECC
             Random random = new Random();
             while (true)
             {
-                int x = random.Next(1, z);
+                int x;
+                if(z < 300)
+                {
+                    x = random.Next(1, z);
+                }
+                else
+                {
+                    x = random.Next(1, 300);
+                }
                 int e = (x * x * x + a * x + b) % z;
                 for (int i = 0; i < z; i++)
                 {
@@ -59,6 +67,11 @@ namespace ECC
                     }
                 }
             }
+            /*Random random = new Random();
+            int x = random.Next(1, z);
+            int e = (x * x * x + a * x + b) % z;
+            int y = TonelliShanks.Handle(e, z);
+            return new Point(x, y);*/
         }
         public static void AutoGeneratePoint(List<Point> pointsList, int x, int a, int b, int z)
         {
@@ -71,6 +84,11 @@ namespace ECC
                     break;
                 }
             }
+            /*int y = TonelliShanks.Handle(e, z);
+            if (y != -1)
+            {
+                pointsList.Add(new Point(x, y));
+            }*/
         }
     }
 }
